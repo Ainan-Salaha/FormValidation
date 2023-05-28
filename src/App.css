@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 70%;
+  flex-direction: column;
+}
+.inputLabels {
+  font-weight: 700;
+}
+
+.form {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.form1 {
+  padding: 20px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-indent: 10px;
+}
+.sal {
+  flex-direction: column;
+}
+.form > input {
+  width: 300px;
+  height: 30px;
+  border-radius: 4px;
+  margin-left: 45px;
+  outline: none;
+  border: 1px solid rgb(123, 121, 121);
+}
+
+#country {
+  margin-left: 137px;
+}
+#address {
+  margin-left: 110px;
+}
+.option {
+  width: 200px;
+  height: 25px;
+  border-radius: 4px;
+}
+.App {
+  background-image: linear-gradient(hsl(270, 75%, 54%), hsl(290, 100%, 75%));
+  height: 120vh;
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  width: 500px;
+}
+button {
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .form {
+    flex-direction: column;
+  }
+  .form1 {
+    flex-direction: column;
+  }
+  .form > input {
+    width: auto;
+    margin-left: 45px;
+  }
+  .App {
+    height: auto;
+  }
+  .btn {
+    gap: 20px;
+  }
+}
